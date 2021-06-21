@@ -1,0 +1,77 @@
+/* pages/index/index.wxss */
+page{
+  background-color: #fff;
+}
+.functionItemRow{
+  display: flex;
+  margin: 0 10rpx;
+}
+.functionItem{
+  flex: 1;
+  letter-spacing: 10rpx;
+  font-size: 40rpx;
+  font-weight: bold;
+  text-align: center;
+  width: 48vw;
+  padding: 20vh 20rpx;
+  margin: 10rpx 10rpx;
+  border-radius: 10rpx;
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  transition: all .5s;
+}
+.functionItem:active{
+  box-shadow: none;
+  
+}
+.itemIcon{
+  font-size: 50rpx;
+}
+.tip{
+  border-radius: 10rpx;
+  padding: 15rpx ;
+  margin: 150rpx 20rpx 10rpx 20rpx;
+  font-size: 30rpx;
+  /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
+}
+
+
+.top{
+ 
+  height: 15vh;
+  border-radius: 10rpx;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  font-size: 40rpx;
+  font-weight: bold;
+  padding: 20rpx 20rpx;
+  margin: 10rpx 10rpx;
+}
+.topTime{
+  flex: 2;
+  width: 60vw;
+  font-size: 100rpx;
+  display: flex;
+  align-items: center
+}
+.topUpDate{
+  flex: 1;
+  text-align: center;
+ 
+}
+.UpDate{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.padding-xl{
+  padding: 50rpx 50rpx;
+  text-align: left;
+}
+.staticDisplay{
+  flex: 1;
+  letter-spacing: 10rpx;
+  height: 20vh;
+  line-height: 20vh;
+  padding: 0;
+  text-align: center;
+}

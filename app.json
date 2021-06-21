@@ -1,0 +1,21 @@
+{
+  "pages": [
+    
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/applicationModule/staticDisplay/portraitScreen/normalFont/normalFont",
+    "pages/applicationModule/rollTitles/rollTitlesShow/rollTitlesShow",
+    "pages/applicationModule/rollTitles/rollTitlesSet/rollTitlesSet",
+    "pages/applicationModule/flashingText/textSet/textSet",
+    "pages/applicationModule/flashingText/breathingLight/breathingLight",
+    "pages/applicationModule/flashingText/tiktokType/tiktokType"
+   
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,28 @@
+/* pages/applicationModule/staticDisplay/portraitScreen/normalFont/normalFont.wxss */
+page{
+  background-color: #000;
+}
+.pageHeight{
+  height: 100vh;
+}
+.set{
+  position: fixed;
+  width: 100vw;
+  bottom: 0;
+  transition: all .5s;
+}
+.hide{
+  bottom: -45vh;
+}
+
+.hideButton{
+  margin: 0 auto;
+}
+.content{
+  padding: 150rpx 30rpx;
+  white-space:pre-line
+}
+.contentCenter{
+  text-align: center;
+}
+

@@ -1,0 +1,49 @@
+<!--pages/index/index.wxml-->
+<view class="">
+  <view class="functionItemRow">
+    <view class="top topTime bg-gradual-blue  ">
+      <view>{{time}}</view>
+    </view>
+    <view class="top topUpDate bg-cyan" bindtap="Modalchange">
+      <view class="UpDate">
+        <view class="padding-bottom-sm "><text class="itemIcon cuIcon-pullup   "></text></view>
+        <view>本次更新</view>
+      </view>
+    </view>
+  </view>
+  <view class="functionItemRow">
+    <view class="functionItem bg-blue" bindtap="pagesJump" data-page="rollTitles">
+      <view class="padding-bottom-sm itemIcon"><text class=" cuIcon-keyboard "></text></view>
+      <view>滚动字幕</view>
+    </view>
+    <view class="functionItem bg-cyan" bindtap="pagesJump" data-page="textSet">
+      <view class="padding-bottom-sm itemIcon"><text class=" cuIcon-we   "></text></view>
+      <view>闪动文字</view>
+    </view>
+  </view>
+  <view class="functionItemRow">
+    <view class="top bg-gradual-blue staticDisplay " bindtap="pagesJump" data-page="normalFont">
+      <view><text class=" cuIcon-discover   "></text>文字静态展示</view>
+    </view>
+  </view>
+</view>
+
+
+
+<view class="cu-modal {{isModal?'show':''}}">
+  <view class="cu-dialog">
+    <view class="cu-bar bg-white justify-end">
+      <view class="content">本次更新</view>
+      <view class="action" bindtap="Modalchange">
+        <text class="cuIcon-close text-red"></text>
+      </view>
+    </view>
+    <view class="padding-xl">
+      <view>版本号:V1.2.0</view>
+      <view>本次更新内容:</view>
+      <view>1.新增竖屏静态文字显示(目前字体只有普通,而且颜色只有白色)</view>
+      
+      <!-- <view>有任何建议或者反馈可以+V:codehtml进行反馈</view> -->
+    </view>
+  </view>
+</view>

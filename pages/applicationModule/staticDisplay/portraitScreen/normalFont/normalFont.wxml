@@ -1,0 +1,33 @@
+<!--pages/applicationModule/staticDisplay/portraitScreen/normalFont/normalFont.wxml-->
+<view bindtap="isSetChange" class="pageHeight">
+  <view class="text-white padding content {{isCenter?'contentCenter':''}}" style="font-size:{{fontSize}}" >
+  {{content}}
+</view>
+</view>
+
+<view class="set  {{isSet?'hide':''}}">
+	<view class="cu-form-group" bindtap="isSetChange">
+		<view class=" hideButton"><text class="cuIcon-unfold lg "></text></view>
+		
+	</view>
+  <view class="cu-form-group">
+		<view class="title">字体大小</view>
+		<picker bindchange="PickerChange" value="{{index}}" range="{{picker}}" range-key='name'>
+			<view class="picker">
+				{{picker[index].name}}
+			</view>
+		</picker>
+	</view>
+  <view class="cu-form-group">
+		<view class="title">是否居中</view>
+		<switch bindchange="switchChange"></switch>
+	</view>
+  <view class="cu-form-group align-start">
+		<view class="title">输入内容</view>
+		<textarea  bindinput="textareaBInput" placeholder="请输入你要展示的内容"></textarea>
+	</view>
+  <view class="cu-form-group" bindtap="backEvent">
+		<view class=" hideButton">返回上一页</view>
+		
+	</view>
+</view>
