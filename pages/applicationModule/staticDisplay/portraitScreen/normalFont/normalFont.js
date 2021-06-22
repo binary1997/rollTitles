@@ -15,7 +15,35 @@ Page({
   fontSize:"24rpx",
   isCenter:false,
   isSet:false,
-  content:"暂无展示文字"
+  content:"暂无展示文字",
+  colorSelection:"#ffffff",
+    ColorList: [
+      {
+        title: '雅白',
+        name: 'white',
+        color: '#ffffff'
+      },
+    {
+      title: '桔橙',
+      name: 'orange',
+      color: '#f37b1d'
+    },
+    {
+      title: '森绿',
+      name: 'green',
+      color: '#39b54a'
+    },
+    {
+      title: '海蓝',
+      name: 'blue',
+      color: '#0081ff'
+    },
+    {
+      title: '桃粉',
+      name: 'pink',
+      color: '#e03997'
+    },
+   ],
   },
 
   /**
@@ -52,7 +80,13 @@ Page({
   backEvent: function () {
     wx.navigateBack()
   },
-
+  colorSelection(e){
+    console.log(e,"eee")
+    let color = e.currentTarget.dataset.item.color;
+    this.setData({
+      colorSelection:color
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

@@ -119,7 +119,7 @@ Page({
   },
   homeEvent: function () {
     wx.switchTab({
-      url: '/pages/breaksPage/breaksPage',
+      url: '/pages/index/index',
     })
   },
   setProcess: function () {

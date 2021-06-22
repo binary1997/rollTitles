@@ -44,15 +44,15 @@ Page({
         break;
       case 4:
         showNumber = /(.{4})/g;
-        fontSize = 150
+        fontSize = 140
         break;
       case 6:
         showNumber = /(.{6})/g;
-        fontSize = 110
+        fontSize =95
         break;
       case 8:
         showNumber = /(.{8})/g;
-        fontSize = 85
+        fontSize = 70
         break;
     }
 
@@ -185,8 +185,8 @@ Page({
       console.log(res.target)
     }
     return {
-      title: '闪动文字',
-      path: `/pages/applicationModule/flashingText/tiktokType/tiktokType?setInfo=${JSON.stringify(setInfo)}`,
+      title: '闪动文字2',
+      path: `/pages/applicationModule/flashingText/scintillationFont/scintillationFont?setInfo=${JSON.stringify(setInfo)}`,
       // 成功的回调
       success: (res) => { },
       // 失败的回调

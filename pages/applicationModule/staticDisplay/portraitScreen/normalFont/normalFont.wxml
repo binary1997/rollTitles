@@ -1,11 +1,16 @@
 <!--pages/applicationModule/staticDisplay/portraitScreen/normalFont/normalFont.wxml-->
 <view bindtap="isSetChange" class="pageHeight">
-  <view class="text-white padding content {{isCenter?'contentCenter':''}}" style="font-size:{{fontSize}}" >
+  <view class="text-white padding content {{isCenter?'contentCenter':''}}" style="font-size:{{fontSize}};color:{{colorSelection}}" >
   {{content}}
 </view>
 </view>
 
 <view class="set  {{isSet?'hide':''}}">
+	<view class="colorItemGroup">
+  <view wx:for="{{ColorList}}"  style="flex:1">
+		<view data-item="{{item}}"  class="colorItem {{colorSelection==item.color?'pitchOn':''}}" style=" background-color:{{item.color}};" bindtap="colorSelection"></view>
+	</view>
+ </view>
 	<view class="cu-form-group" bindtap="isSetChange">
 		<view class=" hideButton"><text class="cuIcon-unfold lg "></text></view>
 		

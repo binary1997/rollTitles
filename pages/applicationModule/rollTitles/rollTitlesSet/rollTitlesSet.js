@@ -10,8 +10,8 @@ Page({
     content:"",
     index: 0,
     picker: ['极慢','慢', '中', '稍快','快','极快'],
-    colorSelection:"",
     isStart:"",
+    colorSelection:"",
     ColorList: [
     {
       title: '桔橙',

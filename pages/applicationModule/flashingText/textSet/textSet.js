@@ -8,7 +8,7 @@ Page({
     index: 0,
     picker: ['慢', '中', '快'],
     StyleIndex:'0',
-    StylePicker:['抖动字体','闪烁字体'],
+    StylePicker:['抖动字体','闪烁字体','闪烁字体2'],
     wordsIndex:0,
     wordsPicker:[2,4,6,8],
     content:""
@@ -65,6 +65,13 @@ Page({
           url: `/pages/applicationModule/flashingText/breathingLight/breathingLight?setInfo=${JSON.stringify(setInfo)}`,
         })
       break
+      case '2':
+        wx.navigateTo({
+          url: `/pages/applicationModule/flashingText/scintillationFont/scintillationFont?setInfo=${JSON.stringify(setInfo)}`,
+        })
+      break
+
+     
     }
   },
 

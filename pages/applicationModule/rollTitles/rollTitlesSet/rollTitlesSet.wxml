@@ -11,7 +11,7 @@
   </picker>
 </view>
 <view class="cu-form-group colorGroup">
-  <view class="title">字幕内容</view>
+  <view class="title">字幕颜色</view>
  <view class="colorItemGroup">
   <view wx:for="{{ColorList}}" data-item="{{item}}" class="colorItem {{colorSelection==item.color?'pitchOn':''}}" style=" background-color:{{item.color}};" bindtap="colorSelection"></view>
  </view>
